@@ -1,13 +1,26 @@
 public class Livro {
-    private String nome, autor, ISBN, ano, editora, prateleira, seção, cdd;
-    private int edição;
 
-    void setNome(String nome){
-        this.nome=nome;
+    private String nome, autor, isbn, anoDePublicacao, editora, prateleira, secao, cdd;
+    private int edicao;
+
+    public Livro(String nome, String autor, String isbn, String anoDePublicacao, String editora, String prateleira, String secao, String cdd, int edicao) {
+        this.nome = nome;
+        this.autor = autor;
+        this.isbn = isbn;
+        this.anoDePublicacao = anoDePublicacao;
+        this.editora = editora;
+        this.prateleira = prateleira;
+        this.secao = secao;
+        this.cdd = cdd;
+        this.edicao = edicao;
     }
 
-    public String getNome(){
+    public String getNome() {
         return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getAutor() {
@@ -18,20 +31,20 @@ public class Livro {
         this.autor = autor;
     }
 
-    public String getISBN() {
-        return ISBN;
+    public String getIsbn() {
+        return isbn;
     }
 
-    public void setISBN(String ISBN) {
-        this.ISBN = ISBN;
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 
-    public String getAno() {
-        return ano;
+    public String getAnoDePublicacao() {
+        return anoDePublicacao;
     }
 
-    public void setAno(String ano) {
-        this.ano = ano;
+    public void setAnoDePublicacao(String anoDePublicacao) {
+        this.anoDePublicacao = anoDePublicacao;
     }
 
     public String getEditora() {
@@ -50,12 +63,12 @@ public class Livro {
         this.prateleira = prateleira;
     }
 
-    public String getSeção() {
-        return seção;
+    public String getSecao() {
+        return secao;
     }
 
-    public void setSeção(String seção) {
-        this.seção = seção;
+    public void setSecao(String secao) {
+        this.secao = secao;
     }
 
     public String getCdd() {
@@ -66,11 +79,12 @@ public class Livro {
         this.cdd = cdd;
     }
 
-    public int getEdição() {
-        return edição;
+    public int getEdicao() {
+        return edicao;
     }
 
-    public void setEdição(int edição) {
-        this.edição = edição;
+    public void setEdicao(int edicao) {
+        this.edicao = edicao;
     }
+
 }
