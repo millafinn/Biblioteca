@@ -5,7 +5,8 @@ public  class Main {
 
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
-        Livro livro[] = new Livro[999];
+        Livro livro[] = new Livro[1000];
+        Revista[] revistas = new Revista[1000];
         String retorno;
         int controle = 0;
 
